@@ -29,5 +29,6 @@ class FaalSpider(scrapy.Spider):
         item['title'] = response.xpath('//*[@id="the-post"]/div/div[1]/div[1]/h4/text()').get()
         item['voice'] = response.xpath('//*[@id="the-post"]/div/div[1]/figure/audio/@src').get()
         item['faal'] = faal
+        item['meaning'] = response.xpath('//*[@id="the-post"]/div/div[1]/div[2]/div/p/text()').get()
         print(item)
         return item

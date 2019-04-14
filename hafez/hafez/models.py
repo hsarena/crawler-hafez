@@ -24,5 +24,6 @@ class HafezDB(DeclarativeBase):
     title = Column('title', String(20), unique=True)
     voice = Column('voice', String(100))
     faal = Column('faal', Text())
+    meaning = Column('meaning', Text())
 
 

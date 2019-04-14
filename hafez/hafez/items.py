@@ -12,3 +12,4 @@ class HafezItem(Item):
     title = Field()
     voice = Field()
     faal = Field()
+    meaning = Field()

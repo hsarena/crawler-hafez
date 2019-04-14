@@ -19,6 +19,7 @@ class HafezPipeline(object):
         hafezdb.title = item['title']
         hafezdb.voice = item['voice']
         hafezdb.faal = item['faal']
+        hafezdb.meaning = item['meaning']
 
         try:
             session.add(hafezdb)
