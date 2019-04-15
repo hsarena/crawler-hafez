@@ -25,5 +25,6 @@ class HafezDB(DeclarativeBase):
     voice = Column('voice', String(100))
     faal = Column('faal', Text())
     meaning = Column('meaning', Text())
+    created_date = Column('created_date', DateTime())
 
 
