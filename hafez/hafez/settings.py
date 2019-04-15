@@ -16,11 +16,11 @@ NEWSPIDER_MODULE = 'hafez.spiders'
 
 CONNECTION_STRING = "{drivername}://{user}:{passwd}@{host}:{port}/{db_name}?charset=utf8".format(
     drivername="mysql+pymysql",
-    user="root",
-    passwd="jjkli8jlkj",
+    user="contentUser",
+    passwd="password",
     host="localhost",
     port="3306",
-    db_name="hafez",
+    db_name="content",
 )
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
